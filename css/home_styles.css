@@ -100,7 +100,7 @@ body {
   position:fixed;
   top: 50%;
   left: 50%;
- transform: translate(-40%, -40%);
+  transform: translate(-40%, -40%);
   height:45vh;
   max-width:768px;
   max-height:346px;
@@ -110,6 +110,31 @@ body {
   transition: opacity 2s,border 2s,display 3s,transform 1s,top 2s;
 }
 
+.container {
+  position:relative;
+  margin: 0 0 0 0;
+  width:100%;
+  padding:0;
+  }
+
+.col {
+  /* padding:0 0 0 0; */
+  border-color:#ffffff06;
+  border-style:solid;
+  border-width: 0 1px 0 1px;
+  max-height:173px;
+  display:block;
+}
+
+.row {
+  margin:0;
+}
+
+.col img {
+  margin: 10px;
+  position:relative;
+  height:100%;
+}
 
 /* start of code for menu appearance and behaviour */
 .menu {
