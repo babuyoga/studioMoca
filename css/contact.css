@@ -18,28 +18,88 @@ body {
 }
 
 
-#page_tag {
+
+.container {
+  position:relative;
+  top:33vh;
+  padding-left:150px;
+}
+
+.col {color:white;
+  text-align: left;
+}
+
+.col img {
   position:absolute;
-  opacity:0.5;
-top:30vh;
-left:16vw;
-  }
+left:-130px;
+height:59vh;
+max-width:54px;
+max-height:465px;
+}
 
-  #page_tag:hover {
-    opacity:1;
-  }
+.col {
+  font-family: 'Montserrat', sans-serif;
+  font-size:1rem;
+}
 
-#page_tag img {
-  height:50vh;
-  max-height:398px;
+h5 {
+  font-family: 'Syncopate', sans-serif;
+  font-size:1rem;
+}
+
+.col .add_text , .col .add_link{
+  position:relative;
+  left:-80px;
+
+}
+
+.add_link a {
+color:#ffffff;
+font-size: 1.2rem;
+}
+
+.add_link a:hover {
+  text-decoration:none;
+}
+
+form {
+  position:relative;
+text-align: left;
+
+left:-70px;
+min-width:483px;
+}
+
+input,button {
+  width:483px;
+  height:40px;
+  margin: 8px 0;
+  border-radius: 10px;
+  background-color:#343434;
+  border:none;
+
+}
+textarea {
+  width:483px;
+  margin: 8px 0;
+  border-radius: 10px;
+  border:none;
+background-color:#343434;
+}
+
+button {
+  width:180px;
+  height:45px;
+  background-color:#FDA50f;
+color:white;
+border:none;
+font-family: 'Montserrat', sans-serif;
+font-size:1rem;
+font-weight:500;
 }
 
 
-
-/* code for sidebar that is not visible on smaller screens. Sidebar blends into the scrim  */
-
-
-/* code for the navbar */
+/* css for second navbar  topnav */
 .topnav {
   opacity:1;
   transition: top 2s;
@@ -47,6 +107,7 @@ left:16vw;
   overflow: hidden;
   width:100vw;
   height:24vh;
+  min-height:178px;
  position: fixed;
 z-index: 2;
 top:0vh;
@@ -59,8 +120,9 @@ top:0vh;
   padding-left:2vw;
 
   width:82vw;
-  max-width:1800px;
+  max-width:1229px;
   height:14vh;
+  min-height:100px;
   overflow:hidden;
   top:6.5vh;
  transition:top 2s;
@@ -144,3 +206,8 @@ opacity:0;
   display: none;
   text-align:center;
 }
+
+
+
+/* css for second navbar  topnav */
+/* additional css for animation */

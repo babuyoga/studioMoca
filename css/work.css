@@ -58,6 +58,7 @@
 body {
   background-color:#171717;
   overflow-y: scroll;
+  scroll-behavior: smooth;
 }
 
 /* Hide scrollbar for Chrome, Safari and Opera */
@@ -74,12 +75,31 @@ body {
 video {
   width:100%;
 }
+
+#page_tag {
+  position:absolute;
+  opacity:0.5;
+
+  }
+
+  #page_tag:hover {
+    opacity:1;
+  }
+
+#page_tag img {
+  height:50vh;
+  max-height:360px;
+}
+
 .container {
   position:relative;
   max-width:1122px;
   width:75vw;
-  overflow:hidden;
-  top:26vh;
+  overflow: visible;
+  top:30vh;
+  padding-top:3vh;
+  z-index:0;
+  padding-bottom:3vh;
 }
 .col {
   padding:0 0 0 0;
@@ -89,103 +109,167 @@ video {
 .vid {
   border-bottom:4px #00000000 solid;
     background-color:#000000;
+    opacity:0.4;
+    top:0px;
+    transition: opacity 2s,border 2s,background-color 3s,transform 1s,top 2s;
 }
 
 .desc {
   border-bottom:4px #00000000 solid;
-background-color:#ffffff12;
+  padding:0 50px 0 50px;
+background-color:#ffffff00;
+z-index:0;
+opacity:1;
 }
-.vid:hover {
-  border-bottom: 4px #FDA50F solid;
+
+.desc_text {
+  color:#ffffff;
+}
+/* .vid:hover {
+border-bottom: 4px #FDA50F00 solid;
   background-color:#FDA50F;
+  opacity:2;
+} */
+
+.vid_scroll {
+border-bottom: 4px #FDA50F solid;
+background-image:linear-gradient(transparent 97%,#FDA50F 3%);
+opacity:1;
+transform:scale(1.05);
+z-index:1;
+margin:  12px 0 12px 0;
+top:-4px;
+/* top:-12px; */
 }
 
 .row {
   margin-bottom:1.8vh;
 }
 
-
+#always_text {
+  position:fixed;
+  display:none;
+  bottom:0vh;
+  right:0vw;
+  display:block;
+  background-color:#00000000;
+  width:100vw;
+  min-width:1092px;
+  height:30vh;
+  z-index:2;
+}
 
 
 /* code for sidebar that is not visible on smaller screens. Sidebar blends into the scrim  */
-.sidebar {
-  width: 15vw;
-  height:100vh;
-  background-color: black;
-  position:absolute;
-  left:0;
-  top:0;
-  z-index: -1;
-}
 
 
 /* code for the navbar */
 .topnav {
   opacity:1;
-  transition: top 2.5s, opacity 3s;
+  transition: top 2s;
   background-color:#000000;
   overflow: hidden;
   width:100vw;
-  padding:0 10vw 1vh 0;
+  height:24vh;
+  min-height:178px;
  position: fixed;
-z-index: 1;
+z-index: 2;
+top:0vh;
 
 }
+
+.nav_container {
+  position:relative;
+  padding-top:3.5vh;
+  padding-left:2vw;
+
+  width:82vw;
+  max-width:1229px;
+  height:14vh;
+  min-height:100px;
+  overflow:hidden;
+  top:6.5vh;
+ transition:top 2s;
+ margin: 0 auto;
+}
+
+
 
 /* Style the links inside the navigation bar */
-.topnav .ext_link , .topnav .active {
+.nav_container .ext_link , .nav_container .active , .nav_container .active_2 {
+  position:relative;
   float: right;
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 10vh;
-  text-decoration: none;
-  font-size: 17px;
-  height:23vh;
+  display: inline-block;
+  align-items: center;
+  height:100%;
   padding-left: 2vw;
   padding-right:2vw;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  font-size: 17px;
   transition: transform .4s;
-  position:relative;
-
 }
 
-.topnav .active {
+
+.nav_container .active{
   float:left;
-  padding-top:6vh;
-  padding-left:13vw;
-
+  top:-2.5vh;
+  left:-2.2vw;
+  padding-left: 0;
+  width:190px;
+  height:100px;
+  z-index:1;
+  transition:opacity 1s,transform 2s;
 }
 
-.topnav .active img{
+.nav_container .active_2{
+  float:left;
+  top:-2vh;
+  left:-8vw;
+  padding-left: 0;
+  transition:opacity 4s,transform 2s;
+}
+
+
+.nav_container .active img{
  position: absolute;
- width:190px;
- height:100px;
+ width:100%;
+}
+
+.nav_container .active_2 img{
+ position: absolute;
+ width:60px;
+}
+
+.invisible {
+opacity:0;
 }
 
 /* Add an active class to highlight the Logo */
-.topnav a.active {
+.nav_container a .active {
   /* background-color: black; */
   color: white;
 }
 
 
-/* Change the color of links on hover */
-.topnav a:hover {
+.nav_container a:hover img {
   color: gray;
  transform:scale(1.1);
 }
 
+.nav_container .ext_link:hover {
+  color: gray;
+ transform:scale(1.1);
 
-
-/* Hide the link that should open and close the topnav on small screens */
-.topnav .icon {
-  display: none;
-  text-align:center;
 }
 
 
-
-/* additional css for animation */
+/* Hide the link that should open and close the topnav on small screens */
+.nav_container .icon {
+  display: none;
+  text-align:center;
+}
 
 
 
@@ -196,7 +280,7 @@ z-index: 1;
    width: 100%;
    height: 8px;
    background: #00000000;
-   z-index:1;
+   z-index:8;
  }
 
  /* The progress bar (scroll indicator) */
@@ -207,3 +291,16 @@ z-index: 1;
    width: 0%;
  }
 /* scrollbar progress code end */
+
+
+footer {
+  width:100vw;
+  height:5vh;
+  max-height:37px;
+  background-color: black;
+  position: fixed;
+  bottom:0;
+  border-top:solid;
+  border-width: 2px;
+  border-color:#FDA50F;
+}

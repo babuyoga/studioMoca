@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <title>Studio Moca</title>
-  <link rel="icon" href="images/logo_home.png" type="image/x-icon">
+  <link rel="icon" href="resources/images/logo_home.png" type="image/x-icon">
 <!-- google fonts -->
 <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Syncopate&display=swap" rel="stylesheet">
@@ -18,12 +18,9 @@
 </head>
 
 <body>
-  <div class="scrim">
-  <video autoplay muted loop class="myVideo1">
-   <source src="images/videoplayback.webm" id="videoplayer1" type="video/webm">
-  </video>
-  <video autoplay muted loop class="myVideo2">
-   <source src="images/videoplayback1.webm" id="videoplayer2" type="video/webm">
+  <div class="scrim" >
+  <video autoplay muted loop class="myVideo1" id="home_player">
+   <source src="resources/videos/1.webm" id="videoplayer" type="video/webm">
   </video>
 </div>
 
@@ -33,7 +30,7 @@
   <!-- code for navbar -->
 
   <div class="topnav" id="myTopnav">
-    <a href="index.html" class="active"><img src="images/brand_outline.svg"></img></a>
+    <a href="index.html" class="active"><img src="resources/images/brand_outline.svg"></img></a>
 
 
     <a href="mailto:writetomoca@gmail.com" class="ext_link">email.</a>
@@ -52,11 +49,11 @@
 
 <!-- code for menu -->
 <div class="menu">
-  <a href="work.html" class="menu_link" >WORK</a>
-  <a href="#facebook" class="menu_link" >CLIENTS</a>
-  <a href="#facebook" class="menu_link" >CONTACT</a>
-  <a href="#facebook" class="menu_link" >ABOUT</a>
-  <a href="#facebook" class="menu_link">CAREERS</a>
+  <a href="work.html" class="menu_link" onmouseover="loadnew(2)" onmouseout="loadnew(1)">WORK</a>
+  <a href="clients.html" class="menu_link" onmouseover="loadnew(3)" onmouseout="loadnew(1)">CLIENTS</a>
+  <a href="contact.html" class="menu_link" onmouseover="loadnew(4)" onmouseout="loadnew(1)">CONTACT</a>
+  <a href="about.html" class="menu_link" onmouseover="loadnew(5)" onmouseout="loadnew(1)">ABOUT</a>
+  <a href="careers.html" class="menu_link" onmouseover="loadnew(6)" onmouseout="loadnew(1)">CAREERS</a>
 </div>
 <!-- menu code end -->
 
@@ -68,7 +65,7 @@
 
 <div class="add_div">
 <span class="add_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod - 100293</span>
-<img src="images/logo_home.png" class="logo_monk"></img>
+<img src="resources/images/logo_home.png" class="logo_monk"></img>
 </div>
 
 

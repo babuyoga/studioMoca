@@ -1,0 +1,93 @@
+
+
+body {
+  background-color:#171717;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+body::-webkit-scrollbar {
+    display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+body {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+
+/* css for second navbar topnav_2 */
+.topnav_2 {
+  opacity:1;
+  background-color:#000000;
+  overflow: hidden;
+  width:100vw;
+  padding:0 10vw 1vh 0;
+ position: fixed;
+z-index: 2;
+top:0vh;
+}
+
+/* Style the links inside the navigation bar */
+.topnav_2 .ext_link , .topnav_2 .active {
+  float: right;
+  display: block;
+  color: white;
+  text-align: center;
+  padding-top: 4vh;
+  text-decoration: none;
+  font-size: 17px;
+  height:11vh;
+  padding-left: 2vw;
+  padding-right:2vw;
+  transition: transform .4s;
+  position:relative;
+
+}
+
+.topnav_2 .active {
+  float:left;
+  padding-top:2vh;
+  padding-left:15vw;
+
+}
+
+.topnav_2 .active img{
+ position: absolute;
+ width:60px;
+
+}
+
+/* Add an active class to highlight the Logo */
+.topnav_2 a .active {
+  /* background-color: black; */
+  color: white;
+}
+
+
+.topnav_2 a:hover img {
+  color: gray;
+ transform:scale(1.1);
+}
+
+.topnav_2 .ext_link:hover {
+  color: gray;
+ transform:scale(1.1);
+
+}
+
+
+/* Hide the link that should open and close the topnav on small screens */
+.topnav_2 .icon {
+  display: none;
+  text-align:center;
+}
+
+
+
+
+
+/* css for second navbar topnav_2 */
+/* additional css for animation */

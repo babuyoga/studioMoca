@@ -1,0 +1,183 @@
+
+
+body {
+  background-color:#171717;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+body::-webkit-scrollbar {
+    display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+body {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+
+}
+
+
+p {
+  font-family: 'Montserrat', sans-serif;
+  font-size:0.8rem;
+}
+
+
+
+.container {
+  position:relative;
+  top:33vh;
+  padding-left:150px;
+}
+
+.col {color:white;
+  text-align: left;
+}
+
+.col img {
+  position:absolute;
+left:-130px;
+max-width:54px;
+max-height:465px;
+
+}
+
+.col .add_text {
+  position:relative;
+  left:-80px;
+  font-family: 'Syncopate', sans-serif;
+  font-size:1rem;
+}
+
+.displayPic{
+  width:150px;
+  height:150px;
+  background-color:white;
+  border-radius:75px;
+  margin: 20px 10px;
+  text-align:center;
+
+}
+.displayPic p {
+  font-family: 'Montserrat', sans-serif;
+  font-size:1.15rem;
+}
+
+.displayPic p {
+  position:relative;
+  top:170px;
+}
+/* css for second navbar  topnav */
+.topnav {
+  opacity:1;
+  transition: top 2s;
+  background-color:#000000;
+  overflow: hidden;
+  width:100vw;
+  height:24vh;
+  min-height:178px;
+ position: fixed;
+z-index: 2;
+top:0vh;
+
+}
+
+.nav_container {
+  position:relative;
+  padding-top:3.5vh;
+  padding-left:2vw;
+
+  width:82vw;
+  max-width:1229px;
+  height:14vh;
+  min-height:100px;
+  overflow:hidden;
+  top:6.5vh;
+ transition:top 2s;
+ margin: 0 auto;
+}
+
+
+
+/* Style the links inside the navigation bar */
+.nav_container .ext_link , .nav_container .active , .nav_container .active_2 {
+  position:relative;
+  float: right;
+  display: inline-block;
+  align-items: center;
+  height:100%;
+  padding-left: 2vw;
+  padding-right:2vw;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  font-size: 17px;
+  transition: transform .4s;
+}
+
+
+.nav_container .active{
+  float:left;
+  top:-2.5vh;
+  left:-2.2vw;
+  padding-left: 0;
+  width:190px;
+  height:100px;
+  z-index:1;
+  transition:opacity 1s,transform 2s;
+}
+
+.nav_container .active_2{
+  float:left;
+  top:-2vh;
+  left:-8vw;
+  padding-left: 0;
+  transition:opacity 4s,transform 2s;
+}
+
+
+.nav_container .active img{
+ position: absolute;
+ width:100%;
+}
+
+.nav_container .active_2 img{
+ position: absolute;
+ width:60px;
+}
+
+.invisible {
+opacity:0;
+}
+
+/* Add an active class to highlight the Logo */
+.nav_container a .active {
+  /* background-color: black; */
+  color: white;
+}
+
+
+.nav_container a:hover img {
+  color: gray;
+ transform:scale(1.1);
+}
+
+.nav_container .ext_link:hover {
+  color: gray;
+ transform:scale(1.1);
+
+}
+
+
+/* Hide the link that should open and close the topnav on small screens */
+.nav_container .icon {
+  display: none;
+  text-align:center;
+}
+
+
+
+/* css for second navbar  topnav */
+/* additional css for animation */

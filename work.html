@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <title>Studio Moca</title>
-  <link rel="icon" href="images/logo_home.png" type="image/x-icon">
+  <link rel="icon" href="resources/images/logo_home.png" type="image/x-icon">
   <!-- google fonts -->
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Syncopate&display=swap" rel="stylesheet">
@@ -22,10 +22,13 @@
   <!-- code for navbar -->
 
   <div class="topnav" id="myTopnav">
-    <a href="index.html" class="active"><img src="images/brand_outline.svg"></img></a>
 
+    <div class="nav_container" id="nav_cont">
 
-    <a href="mailto:writetomoca@gmail.com" class="ext_link">email.</a>
+      <a href="index.html" class="active invisible" id="brand_Text"><img src="resources/images/brand_outline.svg"></img></a>
+      <a href="index.html" class="active_2 invisible" id="brand_logo"><img src="resources/images/logo_home.png"></img></a>
+
+    <a href="mailto:writetomoca@gmail.com" class="ext_link ">email.</a>
     <a href="https://www.facebook.com/monkeyscreatingart" class="ext_link" target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook-square"></i></a>
     <a href="#twitter" class="ext_link"><i class="fab fa-twitter"></i></a>
     <a href="#youtube" class="ext_link"><i class="fab fa-youtube"></i></a>
@@ -35,8 +38,10 @@
     <a href="javascript:void(0);" class="icon" onclick="myFunction()">
       <i class="fa fa-bars"></i>
     </a>
+  </div>
 
   </div>
+
   <!-- navbar code end -->
 
 
@@ -48,45 +53,34 @@
   <!-- scrollbar progress code end -->
 
 
-  <!-- <div class="container">
-  <div class="item work_1"> <img src="images/WORK.svg"></img></div>
-
-  <div class="item work_2"> <video id="video_1" autoplay ="autoplay" muted="muted"> <source src="images/videoplayback.webm" type="video/webm"> Your browser does not support the video tag. </video> </div>
-
-  <div class="item work_3"> <video id="video_2" autoplay ="autoplay" muted="muted"> <source src="images/videoplayback1.webm" type="video/webm"> Your browser does not support the video tag. </video> </div>
-  <div class="item work_4"> </div>
-  <div class="item work_5"> 5</div>
-  <div class="item work_6">6</div>
-  <div class="item work_7">7</div>
-  <div class="item work_8">8</div>
-  <div class="item work_9">9</div>
-  <div class="item work_10">10</div>
-</div> -->
-
   <div class="container">
   <!-- first row -->
     <div class="row">
-  <div class="col col-lg-2 col-sm-12">  </div>
-      <div class="col col-lg-2 col-sm-12 desc">  </div>
+  <div class="col col-lg-1 col-sm-12">   <div id="page_tag">
+      <img src="resources/images/work.svg" ></img> </div> </div>
+      <div class="col col-lg-4 col-sm-12 desc">  </div>
 
-      <div class="col col-lg-8 col-sm-12 vid">
-       <video id="video_1" autoplay ="autoplay" muted="muted" > <source src="images/videoplayback.webm" type="video/webm"> Your browser does not support the video tag. </video>
+      <div class="col col-lg-7 col-sm-12 vid">
+       <a href="#"><video   muted="muted" > <source src="resources/videos/1.webm" type="video/webm"> Your browser does not support the video tag. </video></a>
       </div>
     </div>
 <!-- end of first row -->
 <!-- 2nd row -->
   <div class="row">
     <div class="col col-sm-12 vid">
-    <video id="video_2" autoplay ="autoplay" muted="muted"> <source src="images/videoplayback1.webm" type="video/webm"> Your browser does not support the video tag. </video>
+    <video    muted="muted"> <source src="resources/videos/2.webm" type="video/webm"> Your browser does not support the video tag. </video>
     </div>
   </div>
 <!-- end of 2nd row -->
 <!-- 3rd row -->
   <div class="row">
 <div class="col col-lg-8 col-sm-12 vid">
-<video id="video_2" autoplay ="autoplay" muted="muted"> <source src="images/videoplayback1.webm" type="video/webm"> Your browser does not support the video tag. </video></div>
+<video   muted="muted"> <source src="resources/videos/3.webm" type="video/webm"> Your browser does not support the video tag. </video></div>
 
-<div class="col col-lg-4 col-sm-12 desc"></div>
+<div class="col col-lg-4 col-sm-12 desc">
+
+
+</div>
 
 
   </div>
@@ -98,14 +92,14 @@
 
     </div>
     <div class="col col-lg-9 col-sm-12 vid">
-    <video id="video_1" autoplay ="autoplay" muted="muted" > <source src="images/videoplayback.webm" type="video/webm"> Your browser does not support the video tag. </video>
+    <video    muted="muted" > <source src="resources/videos/4.webm" type="video/webm"> Your browser does not support the video tag. </video>
     </div>
   </div>
 <!-- end of 4th row -->
 <!-- 5th row -->
   <div class="row">
     <div class="col col-sm-12 vid">
-    <video id="video_2" autoplay ="autoplay" muted="muted"> <source src="images/videoplayback1.webm" type="video/webm"> Your browser does not support the video tag. </video>
+    <video    muted="muted"> <source src="resources/videos/5.webm" type="video/webm"> Your browser does not support the video tag. </video>
     </div>
   </div>
 <!-- end of 5th row -->
@@ -114,13 +108,13 @@
   <div class="row">
 <div class="col col-lg-4 col-sm-12 desc"></div>
 <div class="col col-lg-8 col-sm-12 vid">
-<video id="video_2" autoplay ="autoplay" muted="muted"> <source src="images/videoplayback.webm" type="video/webm"> Your browser does not support the video tag. </video></div>
+<video    muted="muted"> <source src="resources/videos/6.webm" type="video/webm"> Your browser does not support the video tag. </video></div>
   </div>
 <!-- end of 6th row -->
 <!-- 7th row -->
   <div class="row">
 <div class="col col-lg-8 col-sm-12 vid">
-<video id="video_2" autoplay ="autoplay" muted="muted"> <source src="images/videoplayback1.webm" type="video/webm"> Your browser does not support the video tag. </video></div>
+<video    muted="muted"> <source src="resources/videos/7.webm" type="video/webm"> Your browser does not support the video tag. </video></div>
 
 <div class="col col-lg-4 col-sm-12 desc"></div>
 
@@ -131,7 +125,7 @@
 <!-- 8th row -->
   <div class="row">
     <div class="col col-sm-12 vid">
-    <video id="video_2" autoplay ="autoplay" muted="muted"> <source src="images/videoplayback.webm" type="video/webm"> Your browser does not support the video tag. </video>
+    <video    muted="muted"> <source src="resources/videos/8.webm" type="video/webm"> Your browser does not support the video tag. </video>
     </div>
   </div>
 <!-- end of 8th row -->
@@ -139,7 +133,7 @@
   <div class="row">
 <div class="col col-lg-4 col-sm-12 desc"></div>
 <div class="col col-lg-8 col-sm-12 vid">
-<video id="video_2" autoplay ="autoplay" muted="muted"> <source src="images/videoplayback1.webm" type="video/webm"> Your browser does not support the video tag. </video></div>
+<video    muted="muted"> <source src="resources/videos/9.webm" type="video/webm"> Your browser does not support the video tag. </video></div>
   </div>
 <!-- end of 9th row -->
 <!-- 10th row -->
@@ -147,16 +141,157 @@
 
 
     <div class="col col-lg-9 col-sm-12 vid">
-    <video id="video_1" autoplay ="autoplay" muted="muted" > <source src="images/videoplayback.webm" type="video/webm"> Your browser does not support the video tag. </video>
+    <video    muted="muted" > <source src="resources/videos/10.webm" type="video/webm"> Your browser does not support the video tag. </video>
     </div>
 
     <div class="col col-lg-3 col-sm-12 desc"></div>
   </div>
 <!-- end of 10th row -->
+<!-- 11th row -->
+  <div class="row">
+    <div class="col col-lg-12 col-sm-12 vid ">
+    <video    muted="muted" > <source src="resources/videos/11.webm" type="video/webm"> Your browser does not support the video tag. </video></div>
+  </div>
+<!-- end of 11th row -->
+
+<!-- 12th row -->
+<div class="row">
+  <div class="col col-sm-12 vid">
+  <video    muted="muted"> <source src="resources/videos/12.webm" type="video/webm"> Your browser does not support the video tag. </video>
+  </div>
+</div>
+<!-- end of 12th row -->
+<!-- 13th row -->
+<div class="row">
+<div class="col col-lg-8 col-sm-12 vid">
+<video   muted="muted"> <source src="resources/videos/13.webm" type="video/webm"> Your browser does not support the video tag. </video></div>
+
+<div class="col col-lg-4 col-sm-12 desc">
+
+</div>
+
+
+</div>
+<!-- end of 13th row -->
+<!-- 14th row -->
+<div class="row">
+
+  <div class="col col-lg-3 col-sm-12 desc">
+
+  </div>
+  <div class="col col-lg-9 col-sm-12 vid">
+  <video    muted="muted" > <source src="resources/videos/14.webm" type="video/webm"> Your browser does not support the video tag. </video>
+  </div>
+</div>
+<!-- end of 14th row -->
+<!-- 15th row -->
+<div class="row">
+  <div class="col col-sm-12 vid">
+  <video    muted="muted"> <source src="resources/videos/15.webm" type="video/webm"> Your browser does not support the video tag. </video>
+  </div>
+</div>
+<!-- end of 15th row -->
+
+<!-- 16th row -->
+<div class="row">
+<div class="col col-lg-4 col-sm-12 desc"></div>
+<div class="col col-lg-8 col-sm-12 vid">
+<video    muted="muted"> <source src="resources/videos/16.webm" type="video/webm"> Your browser does not support the video tag. </video></div>
+</div>
+<!-- end of 16th row -->
+<!-- 17th row -->
+  <div class="row">
+<div class="col col-lg-8 col-sm-12 vid">
+<video   muted="muted"> <source src="resources/videos/17.webm" type="video/webm"> Your browser does not support the video tag. </video></div>
+
+<div class="col col-lg-4 col-sm-12 desc">
+
+</div>
 
 
   </div>
+<!-- end of 17th row -->
+<!-- 18th row -->
+  <div class="row">
 
+    <div class="col col-lg-3 col-sm-12 desc">
+
+    </div>
+    <div class="col col-lg-9 col-sm-12 vid">
+    <video    muted="muted" > <source src="resources/videos/18.webm" type="video/webm"> Your browser does not support the video tag. </video>
+    </div>
+  </div>
+<!-- end of 18th row -->
+<!-- 19th row -->
+  <div class="row">
+    <div class="col col-sm-12 vid">
+    <video    muted="muted"> <source src="resources/videos/19.webm" type="video/webm"> Your browser does not support the video tag. </video>
+    </div>
+  </div>
+<!-- end of 19th row -->
+
+<!-- 20th row -->
+  <div class="row">
+<div class="col col-lg-4 col-sm-12 desc"></div>
+<div class="col col-lg-8 col-sm-12 vid">
+<video    muted="muted"> <source src="resources/videos/20.webm" type="video/webm"> Your browser does not support the video tag. </video></div>
+  </div>
+<!-- end of 20th row -->
+<!-- 21st row -->
+  <div class="row">
+<div class="col col-lg-8 col-sm-12 vid">
+<video    muted="muted"> <source src="resources/videos/21.webm" type="video/webm"> Your browser does not support the video tag. </video></div>
+
+<div class="col col-lg-4 col-sm-12 desc"></div>
+
+
+  </div>
+<!-- end of 21st row -->
+
+<!-- 22nd row -->
+  <div class="row">
+    <div class="col col-sm-12 vid">
+    <video    muted="muted"> <source src="resources/videos/22.webm" type="video/webm"> Your browser does not support the video tag. </video>
+    </div>
+  </div>
+<!-- end of 22nd row -->
+<!-- 23rd row -->
+<div class="row">
+<div class="col col-lg-4 col-sm-12 desc"></div>
+<div class="col col-lg-8 col-sm-12 vid">
+<video    muted="muted"> <source src="resources/videos/23.webm" type="video/webm"> Your browser does not support the video tag. </video>
+</div>
+</div>
+<!-- end of 23rd row -->
+<!-- 24th row -->
+  <div class="row">
+    <div class="col col-sm-12 vid">
+    <video    muted="muted"> <source src="resources/videos/24.webm" type="video/webm"> Your browser does not support the video tag. </video>
+    </div>
+  </div>
+<!-- end of 24th row -->
+
+<!-- 25th row -->
+  <div class="row">
+<div class="col col-lg-4 col-sm-12 desc"></div>
+<div class="col col-lg-8 col-sm-12 vid">
+<video    muted="muted"> <source src="resources/videos/25.webm" type="video/webm"> Your browser does not support the video tag. </video></div>
+  </div>
+<!-- end of 25th row -->
+
+<div class="row">
+  <div id="always_text">
+  <p>
+     here's some content;
+  </p>
+  </div>
+
+
+</div>
+</div>
+<footer class="bottom_ft">
+
+</footer>
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   <script src="js/work.js" charset="utf-8"> </script>
