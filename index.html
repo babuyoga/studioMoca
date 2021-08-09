@@ -18,6 +18,9 @@
 </head>
 
 <body>
+  <div class="binder">
+
+
   <div class="scrim" >
   <video autoplay muted loop class="myVideo1" id="home_player">
    <source src="resources/videos/1.webm" id="videoplayer" type="video/webm">
@@ -50,9 +53,9 @@
 <!-- code for menu -->
 <div class="menu">
   <a href="work.html" class="menu_link" onmouseover="loadnew(2)" onmouseout="loadnew(1)">WORK</a>
-  <a href="clients.html" class="menu_link" onmouseover="loadnew(3)" onmouseout="loadnew(1)">CLIENTS</a>
+  <a href="#" class="menu_link" onmouseover="loadnew(3)" onmouseout="loadnew(1)" onclick="client()">CLIENTS</a>
   <a href="contact.html" class="menu_link" onmouseover="loadnew(4)" onmouseout="loadnew(1)">CONTACT</a>
-  <a href="about.html" class="menu_link" onmouseover="loadnew(5)" onmouseout="loadnew(1)">ABOUT</a>
+  <a href="about.html" class="menu_link" onmouseover="loadnew(5)" onmouseout="loadnew(1)" >ABOUT</a>
   <a href="careers.html" class="menu_link" onmouseover="loadnew(6)" onmouseout="loadnew(1)">CAREERS</a>
 
 </div>
@@ -63,7 +66,11 @@
 
 </div>
 <!-- sidebar code end -->
+  </div>
+
 <!-- code for client list -->
+
+<div class="fullcover">
 <div class="clientbar">
   <div class="container">
   <div class  ="row">
@@ -82,22 +89,26 @@
     <div class="col col-md-6 col-lg-4 col-sm-12">
     <img src="resources/client/AP.png" ></img>
     </div>
-    <div class="col col-md-6 col-lg-4 col-sm-12">
+    <!-- <div class="col col-md-6 col-lg-4 col-sm-12">
 
     </div>
     <div class="col col-md-6 col-lg-4 col-sm-12">
 
-    </div>
+    </div> -->
   </div>
 
   </div>
 </div>
-
+</div>
 <!-- code for client list end -->
+
+
+
+
 
 <div class="add_div">
 <span class="add_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod - 100293</span>
-<img src="resources/images/logo_home.png" class="logo_monk"></img>
+<img src="resources/images/logo_home.png" class="logo_monk" onclick="reverse()"></img>
 </div>
 
 

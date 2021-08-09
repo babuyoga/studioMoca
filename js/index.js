@@ -23,3 +23,29 @@ function myFunction() {
     x.className = "topnav";
   }
 }
+
+
+$( ".fullcover" ).click(function(e) {
+    if (e.target == this) {
+        reverse();
+    }
+});
+
+function client() {
+  var clientbar = $(".clientbar");
+    var fullcover = $(".fullcover");
+      var binder = $(".binder");
+
+clientbar.addClass("clientbar_vis");
+fullcover.addClass("fullcover_vis");
+binder.addClass("binder_vis");
+}
+
+function reverse() {
+  var clientbar = $(".clientbar");
+    var fullcover = $(".fullcover");
+      var binder = $(".binder");
+  clientbar.removeClass("clientbar_vis");
+  fullcover.removeClass("fullcover_vis");
+  binder.removeClass("binder_vis");
+}
