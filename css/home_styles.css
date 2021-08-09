@@ -89,6 +89,21 @@ body {
   top:0;
   z-index: -1;
 }
+
+
+.clientbar {
+  width:50vw;
+  height:45vh;
+  max-width:768px;
+  max-height:346px;
+  background-color: #ffffffab;
+  display:inline;
+  position:absolute;
+  top:4vh;
+  left:13vw;
+}
+
+
 /* start of code for menu appearance and behaviour */
 .menu {
   text-align:left;
