@@ -14,6 +14,10 @@
   display:none;
 }
 
+.clientbar {
+  display:none;
+}
+
 }
 /* end of alternate class definition for smaller screens */
 
@@ -92,15 +96,18 @@ body {
 
 
 .clientbar {
-  width:50vw;
+  width:50%;
+  position:fixed;
+  top: 50%;
+  left: 50%;
+ transform: translate(-40%, -40%);
   height:45vh;
   max-width:768px;
   max-height:346px;
   background-color: #ffffffab;
   display:inline;
-  position:absolute;
-  top:4vh;
-  left:13vw;
+  opacity:100;
+  transition: opacity 2s,border 2s,display 3s,transform 1s,top 2s;
 }
 
 
