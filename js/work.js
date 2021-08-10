@@ -1,4 +1,12 @@
+
+
+
+
+
 var prevScrollpos = window.pageYOffset;
+
+
+
 document.getElementById("myTopnav").style.top = "0";
 document.getElementById("brand_Text").classList.remove("invisible");
 var j;
@@ -9,6 +17,7 @@ var i;
 for (i = 0; i < allDivs.length; i++) {
   console.log(i, allDivs.item(i));
 }
+
 
 // var flag=0;
 //
@@ -133,21 +142,30 @@ prevScrollpos = currentScrollPos;
 }
 
 function scrollEffect(x) {
-
-  if(x>0){
-    allDivs.item(x - 1).classList.remove("vid_scroll");
-   allDivs.item(x - 1).querySelector('video').pause();
-  }
+if(x>0){
+  allDivs.item(x - 1).classList.remove("vid_scroll");
+  allDivs.item(x - 1).querySelector('video').pause();
+}
 
 
 allDivs.item(x).classList.add("vid_scroll");
 // allDivs.item(x).querySelector('video').src = "resources/videos/"+(x+1)+".webm";
 allDivs.item(x).querySelector('video').play();
 
-  if(x<allDivs.length) {
-    allDivs.item(x + 1).classList.remove("vid_scroll");
-  allDivs.item(x + 1).querySelector('video').pause();
+if(x<allDivs.length) {
+  allDivs.item(x + 1).classList.remove("vid_scroll");
+  allDivs.item(x + 1).querySelector('video').pause();}
+
 }
 
-console.log("playing video no:",x+1);
+function bodyload(){
+  for (i = 1; i < allDivs.length; i++) {
+    loadvid(i);
+  }
+}
+
+
+function loadvid(y) {
+  x = y+1;
+  allDivs.item(y).querySelector('video').src= "resources/videos/"+x+".webm";
 }
