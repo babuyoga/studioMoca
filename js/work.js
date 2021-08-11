@@ -18,6 +18,12 @@ for (i = 0; i < allDivs.length; i++) {
   console.log(i, allDivs.item(i));
 }
 
+$("video").hover(function() {
+    $(".desc_text_large").addClass("desc_visible");
+}, function() {
+    $(".desc_text_large").removeClass("desc_visible");
+});
+
 
 // var flag=0;
 //

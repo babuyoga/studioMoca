@@ -98,7 +98,22 @@ font-size:1rem;
 font-weight:500;
 }
 
-
+.submit_alert {
+  position:absolute;
+  top:50%;
+  left:50%;
+  transform: translate(-45%,-30%);
+  height:40vh;
+  width:40vw;
+  max-height:304px;
+  max-width:612px;
+  background-color: #000000;
+  color:#FDA50f;
+  border: 1px #FDA50f solid;
+  text-align:center;
+  display:none;
+  vertical-align: middle;
+}
 /* css for second navbar  topnav */
 .topnav {
   opacity:1;
