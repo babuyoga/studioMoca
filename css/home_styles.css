@@ -14,10 +14,6 @@
   display:none;
 }
 
-.clientbar {
-  display:none;
-}
-
 }
 /* end of alternate class definition for smaller screens */
 
@@ -94,62 +90,6 @@ body {
   z-index: -1;
 }
 
-.binder {
-  opacity:1;
-  transition: opacity 2s, display 3s;
-}
-
-.clientbar {
-  width:50%;
-  position:fixed;
-  top: 50%;
-  left: 0%;
-  transform: translate(-40%, -40%);
-  height:50%;
-  max-width:768px;
-  max-height:384px;
-  background-color: #000000ab;
-  display:inline;
-  opacity:0;
-  border: 1px #FDA50F solid;
-  transition: opacity 2s,left 2s;
-  z-index:-5;
-}
-
-.fullcover {
-  min-height:100vh;
-  min-width:100vw;
-  display:inline;
-  position:absolute;
-  opacity:0;
-  top:0;
-  left:0;
-  transition: opacity 5s,top 2s,display 5s;
-  z-index: -5;
-}
-
-.clientbar_vis {
-  opacity:1;
-  z-index:2;
-  left:50%;
-}
-.clientbar_invis {
-  left:100%;
-}
-.clientbar_invis2 {
-  left:0%;
-}
-
-.fullcover_vis {
-  display:inline;
-  opacity:1;
-  z-index:2;
-}
-
-
-.binder_vis {
-  opacity:0.1;
-}
 
 .container {
   position:relative;

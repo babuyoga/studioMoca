@@ -34,9 +34,11 @@ p {
   padding-left:150px;
 }
 
-.col {color:white;
+.col {
+
+  color:white;
   text-align: left;
-  margin: 0 0rem 3rem 0;
+  margin: 0 0rem 6rem 0;
 }
 
 .col img {
@@ -55,13 +57,14 @@ max-height:465px;
 }
 
 .displayPic{
-  width:150px;
+  width:200px;
   height:150px;
-  background-color:white;
-  border-radius:75px;
   margin: 20px 10px;
   text-align:center;
-  border: 2px #FDA50F solid;
+  border: 0.1rem #FFFFFF06 solid;
+  background-position: center;
+  background-size: 200px;
+  background-repeat: no-repeat;
 }
 .displayPic p {
   font-family: 'Montserrat', sans-serif;
@@ -69,6 +72,7 @@ max-height:465px;
   position:relative;
   top:165px;
 }
+
 
 /* css for second navbar  topnav */
 .topnav {
@@ -176,6 +180,10 @@ opacity:0;
   display: none;
   text-align:center;
 }
+
+
+
+
 
 
 @media only screen and (max-width: 1000px) and (orientation: portrait) {
@@ -304,13 +312,15 @@ opacity:0;
 }
 
 .displayPic{
-  width:300px;
+  width:550px;
   height:300px;
-  background-color:white;
-  border-radius:150px;
   margin: 40px auto;
   text-align:center;
-  border: 0.3rem #FDA50F solid;
+  border: 0.15rem #ffffff06 solid;
+
+  background-position: center;
+  background-size: 400px;
+  background-repeat: no-repeat;
 }
 .displayPic p {
   font-family: 'Montserrat', sans-serif;

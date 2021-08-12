@@ -267,7 +267,8 @@ p {
 
 .nav_container .active img{
   position:relative;
- width:100%;
+ width:90%;
+ max-width:153.3px;
 }
 
 /* Add an active class to highlight the Logo */
