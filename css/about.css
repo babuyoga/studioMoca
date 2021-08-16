@@ -61,7 +61,7 @@ max-height:465px;
   border-radius:75px;
   margin: 20px 10px;
   text-align:center;
-  border: 2px #FDA50F solid;
+  /* border: 1px #FDA50F solid; */
 }
 .displayPic p {
   font-family: 'Montserrat', sans-serif;
@@ -310,7 +310,7 @@ opacity:0;
   border-radius:150px;
   margin: 40px auto;
   text-align:center;
-  border: 0.3rem #FDA50F solid;
+  /* border: 0.3rem #FDA50F solid; */
 }
 .displayPic p {
   font-family: 'Montserrat', sans-serif;

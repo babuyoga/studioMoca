@@ -279,10 +279,6 @@ opacity:0;
 
 
 /* Hide the link that should open and close the topnav on small screens */
-.nav_container .icon {
-  display: none;
-  text-align:center;
-}
 
 .container {
   position:relative;

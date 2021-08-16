@@ -14,12 +14,37 @@ document.getElementById("home_player").src = "resources/videos/"+video_num+".web
 }
 
 // $("#work").hover(loadnew());
+function myFunction(x) {
+  if (x.matches) { // If media query matches
 
-function myFunction() {
-  var x = document.getElementById("myTopnav");
-  if (x.className === "topnav") {
-    x.className += " responsive";
+window.addEventListener("deviceorientation", handleOrientation, true);
+
+
+function handleOrientation(event) {
+  var absolute = event.absolute;
+  var alpha    = event.alpha;
+  var beta     = event.beta;
+  var gamma    = event.gamma;
+
+console.log(absolute);
+console.log(alpha); //0to360
+console.log(beta); //-180to180
+console.log(gamma);//-90to90
+
+
+if(gamma > 0){
+ $("#bgvid").css('left', ((gamma/90)*100));
+  // Do stuff with the new orientation data
+}else {
+  $("#bgvid").css('left', (-1*(gamma/90)*100));
+}
+
+
   } else {
-    x.className = "topnav";
+
   }
 }
+
+var x = window.matchMedia("(max-width: 1000px)")
+myFunction(x) // Call listener function at run time
+x.addListener(myFunction) // Attach listener function on state changes
