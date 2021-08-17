@@ -122,16 +122,12 @@ function myFunction(x) {
         scrollEffect(20);
       } else if ((currentScrollPos > 13190) && (currentScrollPos < 13898)) {
         scrollEffect(21);
-      } else if ((currentScrollPos > 13898) && (currentScrollPos < 14557)) {
+      } else if ((currentScrollPos > 13898) && (currentScrollPos < 14863)) {
         scrollEffect(22);
-      } else if ((currentScrollPos > 14557) && (currentScrollPos < 14987)) {
+      } else if ((currentScrollPos > 14591) && (currentScrollPos < 15300)) {
         scrollEffect(23);
-      } else if ((currentScrollPos > 14353) && (currentScrollPos < 14950)) {
+      } else if ((currentScrollPos > 15300) && (currentScrollPos < 17293)) {
         scrollEffect(24);
-      } else if ((currentScrollPos > 14950)) {
-        scrollEffect(25);
-      } else if ($(window).scrollTop() + $(window).height() == $(document).height()) {
-        alert("bottom!");
       }
 
       // scroll bar progress code
@@ -235,11 +231,12 @@ function myFunction(x) {
         scrollEffect(23);
       } else if ((currentScrollPos > 12300) && (currentScrollPos < 12900)) {
         scrollEffect(24);
-      } else if ((currentScrollPos > 12900) && (currentScrollPos < 13500)) {
-        scrollEffect(25);
-      } else if ($(window).scrollTop() + $(window).height() == $(document).height()) {
-        alert("bottom!");
       }
+      //  else if ((currentScrollPos > 12900) && (currentScrollPos < 13500)) {
+      //   scrollEffect(25);
+      // } else if ($(window).scrollTop() + $(window).height() == $(document).height()) {
+      //   alert("bottom!");
+      // }
 
       // scroll bar progress code
       var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
