@@ -68,6 +68,9 @@ button {
   width:105%;
   height:400px;
    background-color:#828282;
+   background-position: center; /* Center the image */
+ background-repeat: no-repeat; /* Do not repeat the image */
+ background-size: cover;
 }
 /* css for second navbar  topnav */
 .topnav {
